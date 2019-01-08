@@ -537,6 +537,7 @@
 		}
 
 		$("#fakeform").on("click", ".button", function(){
+			var button = $(this);
 			var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
 			var form = {};
 			var errors = {};
@@ -561,14 +562,19 @@
 			if(Object.keys(errors).length > 0) {
 				showErrors(errors);
 			} else {
+				button.addClass("is-loading");
+				
 				$.ajax({
 					type: 'POST', url: 'https://www.moddb.com/legacymodularity.php', timeout: 10000, cache: false, dataType: 'json',
 					data: form,
 					error: function(response, error, exception) {
+						button.removeClass("is-loading");
 						errors["form"] = "Error submitting, try again soon";
 						showErrors(errors);
 					},
 					success: function(response) {
+						button.removeClass("is-loading");
+						
 						if(response["error"]) {
 							errors["form"] = response["error"];
 							showErrors(errors);

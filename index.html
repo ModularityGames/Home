@@ -223,7 +223,7 @@
 						</a>
 					</div>
 					<div class="column">
-						<img src="logoonly.png" alt="Modularity Games">
+						<a href="#landing"><img src="logoonly.png" alt="Modularity Games"></a>
 					</div>
 				</div>
 			</div>
@@ -516,6 +516,7 @@
 	<script>
 	$(document).ready(function() {
 		var games = ["meeplestation"];
+		var gameshomepages = ["https://meeplestation.com"];
 		var gamescurrent = 0;
 
 		rotateGames = function() {
@@ -526,7 +527,7 @@
 			}
 
 			$("#landing .hero-body img").fadeOut(function(){
-				$("#landing .hero-body img").attr("src", "assets/"+games[gamescurrent]+"/logo.png").fadeIn();
+				$("#landing .hero-body img").attr("src", "assets/"+games[gamescurrent]+"/logo.png").fadeIn().closest("a").attr("href", gameshomepages[gamescurrent]);
 			});
 		};
 

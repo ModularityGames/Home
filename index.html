@@ -298,8 +298,29 @@
 		</div>
 	</section>
 
+	<style>
+		.meeplestation a.box:hover,
+		.meeplestation a.box:focus {
+			-webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #a3fbfb;
+			box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #a3fbfb;
+		}
+		
+		.meeplestation .notification.is-link {
+			background-color: #a3fbfb;
+		}
+		
+		.tabletopplayground a.box:hover,
+		.tabletopplayground a.box:focus {
+			-webkit-box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #4575c4;
+			box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px #4575c4;
+		}
+		
+		.tabletopplayground .notification.is-link {
+			background-color: #4575c4;
+		}
+	</style>
 	<section id="games" class="hero is-fullheight is-dark">
-		<div class="hero-body">
+		<div class="meeplestation hero-body">
 			<div class="container has-text-centered">
 				<div class="content">
 					<h2 class="title is-size-4-mobile">Our Games</h2>
@@ -416,6 +437,110 @@
 				</div>
 			</div>
 		</div>
+	</section>	
+	
+	<section class="hero is-dark">	
+		<div class="tabletopplayground hero-body">
+			<div class="container has-text-centered">
+				<!-- For mobile -->
+				<a href="https://tabletop-playground.com/" class="box is-paddingless is-hidden-tablet" target="_blank">
+					<figure class="image is-16by9">
+						<img src="assets/tabletopplayground/logo.jpg" alt="Tabletop Playground">
+					</figure>
+				</a>
+				<a href="https://tabletop-playground.com/" class="box notification is-link has-text-left is-hidden-tablet" target="_blank">
+					<strong>Tabletop Playground</strong> is the ultimate digital tabletop sim featuring multiplayer, cross-platform,  immersive play and a powerful in-game editor
+					<br><br>
+					<span class="is-block has-text-centered">
+						<span class="icon is-medium">
+							<i class="fab fa-lg fa-steam-symbol"></i>
+						</span>
+						<span class="icon is-medium">
+							<i class="fab fa-lg fa-windows"></i>
+						</span>
+					</span>
+				</a>
+
+				<!-- For desktop -->
+				<div class="tile is-ancestor is-hidden-mobile">
+					<div class="tile is-parent">
+						<a href="https://www.youtube.com/watch?v=P2X9Im7AVl0" class="tile tile-trailer is-child box" style="background: url(assets/tabletopplayground/logo.jpg) no-repeat center center; background-size: cover; padding: 0; border-radius: 0;" target="_blank">
+							<figure class="image is-16by9">
+								<span class="button is-danger is-large" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+									<span class="icon is-medium" style="padding: 5px;">
+										<i class="fas fa-play"></i>
+									</span>
+								</span>
+							</figure>
+						</a>
+						<!--<a href="https://tabletop-playground.com/" class="tile tile-logo is-child box" style="background: url(assets/tabletopplayground/logo.jpg) no-repeat center center; background-size: cover; padding: 0; border-radius: 0;" target="_blank"></a>-->
+					</div>
+					<div class="tile is-3 is-vertical is-parent">
+						<a href="assets/tabletopplayground/screen1.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen1.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+						<a href="assets/tabletopplayground/screen2.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen2.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+					</div>
+					<div class="tile is-3 is-vertical is-parent">
+						<a href="assets/tabletopplayground/screen3.jpg" class="tile tile-screenshot is-child box">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen3.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+						<a href="https://tabletop-playground.com/" class="tile is-child notification is-link has-text-left" target="_blank">
+							<span class="is-hidden-touch is-hidden-desktop-only is-hidden-widescreen-only"><strong>Tabletop Playground</strong>, multiplayer, cross-platform, tabletop sim with powerful in-game editor</span>
+							<span class="is-hidden-fullhd is-hidden-touch is-hidden-desktop-only"><strong>Tabletop Playground</strong>, digital tabletop builder</span>
+							<span class="is-hidden-widescreen">Ultimate digital tabletop builder</span>
+							<br><br>
+							<span class="is-block has-text-centered">
+								<span class="icon is-medium">
+									<i class="fab fa-lg fa-steam-symbol"></i>
+								</span>
+								<span class="icon is-medium">
+									<i class="fab fa-lg fa-windows"></i>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="tile is-ancestor is-hidden-mobile">
+					<div class="tile is-3 is-parent">
+						<a href="assets/tabletopplayground/screen5.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen5.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+					</div>
+					<div class="tile is-3 is-parent">
+						<a href="assets/tabletopplayground/screen6.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen6.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+					</div>
+					<div class="tile is-3 is-parent">
+						<a href="assets/tabletopplayground/screen7.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen7.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+					</div>
+					<div class="tile is-3 is-parent">
+						<a href="assets/tabletopplayground/screen8.jpg" class="tile tile-screenshot is-child box" target="_blank">
+							<figure class="image is-16by9">
+								<img src="assets/tabletopplayground/thumb-screen8.jpg" alt="Tabletop Playground">
+							</figure>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<section id="apply" class="hero is-fullheight is-dark">
@@ -521,8 +646,8 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 	<script>
 	$(document).ready(function() {
-		var games = ["meeplestation"];
-		var gameshomepages = ["https://meeplestation.com"];
+		var games = ["meeplestation","tabletopplayground"];
+		var gameshomepages = ["https://meeplestation.com","https://tabletop-playground.com"];
 		var gamescurrent = 0;
 
 		rotateGames = function() {
@@ -642,7 +767,7 @@
 			}
 		});
 
-		$(".tile-screenshot").on("click", function(){
+		$(".hero-body").on("click", ".tile-screenshot", function(){
 			img = $(this).find("img").clone().click(function(){
 				img = $(this);
 				next = false;
